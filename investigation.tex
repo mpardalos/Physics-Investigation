@@ -6,7 +6,6 @@
 \usepackage[section]{placeins}
 \usepackage{graphicx}
     \graphicspath{{media/}} 
-\usepackage{tabularx}
 \usepackage{tikz}
 \usepackage{framed}
 \usepackage{float}
@@ -238,7 +237,7 @@ added to the program graph, which will allow us to derive a best-fit function fo
 \begin{table}[H]
     \centering
     \def\arraystretch{1.5}
-    \begin{tabularx}{\textwidth}{c|X|X}
+    \begin{tabular}{c|c|c}
         Mass (kg) & Average & Error\\ 
         \hline
         \hline
@@ -255,7 +254,7 @@ added to the program graph, which will allow us to derive a best-fit function fo
         0.14 & 1.991 & 0.0318\\ 
         \hline
         0.16 & 2.054 & 0.0430\\ 
-    \end{tabularx}
+    \end{tabular}
     \caption{Processed Data} 
     \label{table:processed data}
 \end{table}
