@@ -38,7 +38,7 @@
 
 \subsection{Focus Question}
 
-How does the weight connected to a gravity car affect the distance it travels
+How does the weight connected to a gravity car affect the distance it will travel
 
 \subsection{Hypothesis}
 
@@ -47,14 +47,14 @@ value.
 
 \subsection{Theory}
 
-Let $A$ the point at which the car starts, $B$ the point at which at the weight touches the
-base of the car, and $C$ the point at which the car stops. Also, let $M$ the mass of the
-whole car, $m$ the mass of the weight attached to the car, $h$ the height from which the
-height is dropped, $r$ the radius of the wheels, $r_a$ the radius of the axle attached to
-the wheels, and $m_w$ the mass of one of the wheels.
+Let $A$ the point on the car's path at which it starts, $B$ the point at which at the weight
+touches the base of the car, and $C$ the point at which the car stops. Also, let $M$ the
+mass of the whole car, $m$ the mass of the weight attached to the car, $h$ the height from
+which the height is dropped, $r$ the radius of the wheels, $r_a$ the radius of the axle
+attached to the wheels, and $m_w$ the mass of one of the wheels.
 
 The distance $AB$ depends on $h$, $r$, and $r_a$. When the weight falls by $h$, the axle
-will rotate by the same angular displacement $\theta$ as the wheels, 
+will rotate by the same angular displacement as the wheels. So,
 %
 \begin{align*}
     AB = \frac{r}{r_a} h
@@ -186,11 +186,11 @@ so they are presented in \autoref{table:car_measurements}:
 \begin{enumerate}
     \item Hang weight from string
     \item Roll string on the axis until weight is at the height of the mark
-    \item Place car around 40cm from the sensor with an object to prevent it from moving.
-        The exact distance does not matter since we are only measuring the distance
-        travelled. It must be more than 40 cm, however, since that is the minimum distance
-        the sensor can measure.  
-    \item Start the logger
+    \item Place car around 40cm from the sensor and place an object in front of its wheels
+        to prevent it from moving.  The exact distance does not matter since we are only
+        measuring the distance travelled. It must be more than 40 cm, however, since that is
+        the minimum distance the sensor can measure.  
+    \item Start the logger, which will begin measuring the distance between it and the car.
     \item Remove the object so the car starts moving
     \item When the car has completely stopped, stop the logger and record the data
 \end{enumerate}
@@ -277,7 +277,7 @@ negligible.
     \centering
     \def\arraystretch{1.5}
     \begin{tabular}{c||r|r}
-        Mass (kg) & Average Distance (m) & Error\\ 
+        Mass (kg) & Average Distance (m) & Error (m)\\ 
         \hline
         \hline
         0.04 & 1.629 & 0.0410\\ 
