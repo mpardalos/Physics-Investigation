@@ -18,6 +18,12 @@
 \usepackage{subcaption}
 
 
+\let\oldsection\section
+\renewcommand\section{\FloatBarrier\oldsection}
+
+\let\oldsubsection\subsection
+\renewcommand\subsection{\FloatBarrier \oldsubsection}
+
 \setlength{\parskip}{1em}
 \setlength{\parindent}{0em}
 
@@ -122,7 +128,6 @@ asymptotically approaching $\frac{r}{r_a}h + \frac{h}{\mu}$
         Height               & Controlled         & The weight is always dropped from the same height from the platform of the car\\
     \end{tabular}
 \end{table}
-\FloatBarrier
 
 \subsection{Apparatus \& Materials}
 
@@ -262,7 +267,6 @@ negligible.
 
 \subsubsection{Presentation}
 
-\FloatBarrier
 \begin{table}[H]
     \centering
     \def\arraystretch{1.5}
@@ -296,7 +300,6 @@ negligible.
         \autoref{eq:s_formula} in blue)}
 \end{figure}
 
-\FloatBarrier
 
 \subsection{Conclusion \& Evaluation}
 
