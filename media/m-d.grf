@@ -6,22 +6,24 @@ MinVersion = 2.5
 OS = Windows NT 5.2 Service Pack 2
 
 [Axes]
-xMin = 0
-xMax = 0.2
+xMin = -0.005
+xMax = 0.18
 xTickUnit = 0.005
 xGridUnit = 0.005
-xLabel = mass of weight (kg)
-yMin = 0
-yMax = 2.2
-yTickUnit = 0.1
-yGridUnit = 0.1
+xShowGrid = 1
+xLabel = Mass of weight (kg)
+yMin = -0.1
+yMax = 2.4
+yTickUnit = 0.2
+yGridUnit = 0.2
+yShowGrid = 1
 yLabel = Distance travelled (m)
 AxesColor = clBlue
 GridColor = 0x00FF9999
-LabelFont = @Noto Sans CJK JP Black,36,clBlack
+NumberFont = Fira Sans,16,clBlack
+LabelFont = Fira Sans,48,clBlack
 ShowLegend = 0
 Radian = 1
-AxesStyle = 2
 LegendPlacement = 2
 
 [PointSeries1]
@@ -33,14 +35,15 @@ ShowLabels = 1
 Font = Tahoma,22,clBlack
 LabelPosition = 4
 PointCount = 7
-Points = 0.04,1.289;0.06,1.647;0.08,1.908;0.1,1.922;0.12,1.959;0.14,1.991;0.16,2.054;
+Points = 0.04,1.629;0.06,1.767;0.08,1.875;0.1,1.922;0.12,1.959;0.14,1.995;0.16,2.054;
 yErrorBarType = 3
-yErrorBarData = 0.0380;0.0534;0.0500;0.0626;0.0246;0.0318;0.0430;
+yErrorBarData = 0.0410;0.0342;0.0500;0.0626;0.0246;0.0318;0.0430;
 LegendText = Series 1
 
 [Func1]
 FuncType = 0
 y = 2.31415585-0.03992289/x
+Visible = 0
 LegendText = f(x)=2.3142-0.0399/x; R²=0.9735
 Color = clFuchsia
 Size = 2
