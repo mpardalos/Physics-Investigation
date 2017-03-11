@@ -207,12 +207,12 @@ so they are presented in \autoref{table:car_measurements}:
 
 \subsection{Data Collection}
 
-\begin{table}[h!]
+\begin{table}[H]
     \centering
         \def\arraystretch{1.5}
         \begin{tabular}{c|c|c|c|c|c}
             \multirow{2}{*}{mass (kg) $\pm$ 0.0001} & 
-                \multicolumn{5}{c}{Distance (Measurement)}  \\ 
+                \multicolumn{5}{c}{Distance (m) $\pm$ 0.001}  \\ 
             \cline{2-6}
             & \nth{1} & \nth{2} & \nth{3} & \nth{4} & \nth{5}\\ 
             \hline
@@ -239,11 +239,19 @@ so they are presented in \autoref{table:car_measurements}:
 
 \subsubsection{Overview}
 
-For processing the data, I will graph the relationship of the weight on the gravity car to
-the mean distance travelled in the five measurements with that weight. The error for each
-measurement is calculated as half the difference between the greatest and the least
-measurement, or: ${\Delta \bar{s} = \frac{1}{2}(s_{max} - s_{min})}$.  The data will then be
-added to the program graph, which will allow us to derive a best-fit function for the data.
+For processing the data, I will plot, on the same mass-distance graph, the points
+corresponding to each mass tested along with \autoref{eq:s_formula}, to check whether that
+line passes through the error bars of each data point.
+
+Since we have five measurements for distance, we will use the arithmetic mean of those five
+values. The error of the used value will be calculated as half the difference between the
+highest and lowest measurements plus the systematic error of the measurement device
+(0.001m), so $\Delta \bar{s} = \frac{1}{2}(s_{max} - s_{min}) + 0.001$. These data will be
+plotted on a mass-distance graph, along with \autoref{eq:s_formula}, to demonstrate that it
+passes through the error bars of each data point.
+
+Note, that there are no error bars for the mass, since the error in those values is
+negligible.
 
 \subsubsection{Presentation}
 
